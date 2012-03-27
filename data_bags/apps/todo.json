@@ -1,0 +1,38 @@
+{
+  "id": "todo",
+  "server_roles": [
+    "todo"
+  ],
+  "type": {
+    "todo": [
+      "nginx",      
+      "rails",
+      "resque",
+      "unicorn",
+      "whenever"
+    ]
+  },
+  "packages": {
+    "libxml2-dev": "",
+    "libxslt1-dev": "",
+    "texlive": "",
+    "texlive-latex-extra": "",
+    "pandoc": ""
+  },
+  "gems": {
+    "backup": "",
+    "fog": "",
+    "httparty": ""
+  },
+  "repository": "git@github.com:smashingboxes/todo.git",
+  "revision": {
+    "_default": "HEAD"
+  },
+  "deploy_to": "/srv/todo",
+  "force": {
+    "_default": false
+  },
+  "migrate": {
+    "_default": true
+  }
+}
